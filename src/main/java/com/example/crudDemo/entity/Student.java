@@ -1,10 +1,10 @@
 package com.example.crudDemo.entity;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.IndexColumn;
 
 @Entity
 @Table(name = "student")
+
 public class Student {
 
     @Id
@@ -24,8 +24,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(int id, String firstName, String lastName, String eMail) {
-        this.id = id;
+    public Student(String firstName, String lastName, String eMail) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.eMail = eMail;
